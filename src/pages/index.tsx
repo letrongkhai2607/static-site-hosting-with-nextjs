@@ -1,23 +1,24 @@
+import { useState } from "react";
+import Intro from "./components/Intro";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Projects from "./components/Projects";
-
 export default function Home() {
+  const [step, setStep] = useState(1);
+  const renderContent = () => {
+    switch (step) {
+      case 1:
+        return <Intro setStep={setStep} />;
+
+      default:
+        return <About setStep={setStep} />;
+    }
+  };
   return (
     <>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Portfolio</title>
-      {/* Header */}
-      <Header />
-      {/* About Section */}
-      <About />
-      {/* Projects Section */}
-      <Projects />
-      {/* Footer */}
-      <Footer />
+
+      <div>{renderContent()}</div>
     </>
   );
 }

@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    backgroundImage: {
+      "main-background-image": "url('../../public/background.jpg')",
+    },
   },
   plugins: [],
 } satisfies Config;
