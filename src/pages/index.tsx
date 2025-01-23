@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Intro from "./components/Intro";
 import About from "./components/About";
 export default function Home() {
@@ -6,10 +6,14 @@ export default function Home() {
   const renderContent = () => {
     switch (step) {
       case 1:
-        return <Intro setStep={setStep} />;
+        return <Intro setStep={() => {}} />;
 
       default:
-        return <About setStep={setStep} />;
+        return (
+          <React.Fragment>
+            <div></div>
+          </React.Fragment>
+        );
     }
   };
   return (

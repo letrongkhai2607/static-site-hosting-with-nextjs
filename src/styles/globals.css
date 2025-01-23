@@ -4,6 +4,6 @@
 
 body {
   color: var(--foreground);
-  font-family: cursive;
+  font-family: monospace;
   font-style: italic;
 }

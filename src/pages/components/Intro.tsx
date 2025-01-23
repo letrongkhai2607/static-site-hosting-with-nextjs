@@ -1,4 +1,5 @@
 import React from "react";
+import ContentContainer from "../containers/ContentContainer";
 type IntroProps = {
   setStep: (step: number) => void;
 };
@@ -22,17 +23,18 @@ const Intro: React.FC<IntroProps> = ({ setStep }) => {
               d="M15.75 19.5 8.25 12l7.5-7.5"
             />
           </svg>
-          <div className="container mx-auto px-4 max-w-[768px] bg-white opacity-50 p-4 rounded-md">
+          <ContentContainer>
             <p className="text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              voluptatibus temporibus perspiciatis ipsum nihil libero molestias
-              excepturi distinctio architecto repudiandae! Voluptate sint magni
-              magnam aliquam ullam deleniti atque? Quisquam, impedit! Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              voluptatibus temporibus perspiciatis ipsum nihil libero molestias
-              excepturi distinctio architecto repudiandae.
+              Experienced Software Developer with over 4 years of hands-on
+              expertise in developing scalable and performant web applications.
+              Skilled in defining project architectures, establishing coding
+              standards, mentoring junior developers. Adept at collaborating
+              with cross-functional teams to deliver user-centric software
+              solutions. Proficient in modern JavaScript frameworks like React,
+              Redux, Nodejs, Nestjs, and have experience with Docker, and
+              RESTful services.
             </p>
-          </div>
+          </ContentContainer>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
